@@ -55,6 +55,19 @@ El análisis abarca desde la ingesta y limpieza profunda de más de 1 millón de
 
 ---
 
+| Variable Name | Role | Type | Description | Units | Missing Values |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **InvoiceNo** | ID | Categorical | a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'c', it indicates a cancellation | | no |
+| **StockCode** | ID | Categorical | a 5-digit integral number uniquely assigned to each distinct product | | no |
+| **Description** | Feature | Categorical | product name | | no |
+| **Quantity** | Feature | Integer | the quantities of each product (item) per transaction | | no |
+| **InvoiceDate** | Feature | Date | the day and time when each transaction was generated | | no |
+| **UnitPrice** | Feature | Continuous | product price per unit | sterling | no |
+| **CustomerID** | Feature | Categorical | a 5-digit integral number uniquely assigned to each customer | | no |
+| **Country** | Feature | Categorical | the name of the country where each customer resides | | no |
+
+
+---
 ## Cómo Ejecutar el Proyecto
 1. Clona este repositorio:
 2. Descarga el archivo de datos `online_retail_II.xlsx` desde la fuente de la UCI y colócalo en la raíz del proyecto.
